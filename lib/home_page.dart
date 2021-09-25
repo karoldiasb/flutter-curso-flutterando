@@ -18,23 +18,125 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('Home Page'),
       ),
-      body: Center(
-          child: Switch(
-              value: AppController.instance.isDarkTheme,
-              onChanged: (value) {
-                AppController.instance.changeTheme();
-              })
-          // GestureDetector(
-          //     child: Text(
-          //       'Contador: $counter',
-          //       style: TextStyle(fontSize: 20),
-          //     ),
-          //     onTap: () {
-          //       setState(() {
-          //         counter++; //boas práticas
-          //       });
-          //     }),
-          ),
+      body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          child: ListView(
+            //ListView aplica o scroll
+            children: [
+              Text('Contador:  $counter'),
+              Switch(
+                value: AppController.instance.isDarkTheme,
+                onChanged: (value) {
+                  AppController.instance.changeTheme();
+                },
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black),
+                  Container(width: 50, height: 50, color: Colors.black)
+                ],
+              )
+            ],
+          )),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
