@@ -21,8 +21,10 @@ class _HomePageState extends State<HomePage> {
       body: Container(
           width: double.infinity,
           height: double.infinity,
-          child: ListView(
-            //ListView aplica o scroll
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment:
+            //     CrossAxisAlignment.stretch, //alinhamento dos filhos
             children: [
               Text('Contador:  $counter'),
               Switch(
@@ -30,102 +32,6 @@ class _HomePageState extends State<HomePage> {
                 onChanged: (value) {
                   AppController.instance.changeTheme();
                 },
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black),
-                  Container(width: 50, height: 50, color: Colors.black)
-                ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
