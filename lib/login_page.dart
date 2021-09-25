@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -52,7 +54,12 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(
                   onPressed: () {
                     if (email == "karol.db@hotmail.com" && password == "123") {
-                      print('correto');
+                      //o push sobrescreve a HomePage por cima da tela de login (a tela de login continua por baixo)
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => HomePage()));
+                      //o pushReplacement substitui a login pela HomePage
+                      // Navigator.of(context).pushReplacement(
+                      //     MaterialPageRoute(builder: (context) => HomePage()));
                     } else {
                       print("login inválido");
                     }
