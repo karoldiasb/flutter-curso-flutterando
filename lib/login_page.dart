@@ -25,6 +25,16 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Container(
+                  width: 150,
+                  height: 150,
+                  child: Image.network(
+                    'https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png',
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
                 TextField(
                   onChanged: (String value) {
                     email = value;
@@ -54,12 +64,10 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(
                   onPressed: () {
                     if (email == "karol.db@hotmail.com" && password == "123") {
-                      //o push sobrescreve a HomePage por cima da tela de login (a tela de login continua por baixo)
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => HomePage()));
-                      //o pushReplacement substitui a login pela HomePage
-                      // Navigator.of(context).pushReplacement(
-                      //     MaterialPageRoute(builder: (context) => HomePage()));
+                      //o pushNamed chama o nome da rota definida na app_widget e sobrescreve a HomePage por cima da tela de login
+                      Navigator.of(context).pushNamed('/home');
+                      //o pushReplacementNamed chama o nome da rota definida na app_widget e substitui a tela de login pela HomePage
+                      // Navigator.of(context).pushReplacementNamed('/home');
                     } else {
                       print("login inválido");
                     }
